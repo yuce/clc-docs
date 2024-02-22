@@ -104,14 +104,16 @@ You can pass `key=value` pairs to override configuration options.
 include::partial$configuration-items.adoc[]
 ====
 
-Usage:
+For example, if you are using a self-signed certificate for development, you can pass `ssl.skip-verify=true` to make CLC not verify the hostname in the SSL certificate.
+
+=== Usage
 
 [source,bash]
 ----
 clc config import-java [target] [source] [flags] [key=value...]
 ----
 
-Parameters:
+=== Parameters
 
 [cols="1m,1m,2a,1m"]
 |===
